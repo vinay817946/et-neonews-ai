@@ -1,0 +1,2 @@
+import GlassCard from "@/components/ui/GlassCard";
+export default function KeyTakeaways({ items }) { return <GlassCard className="neo-panel-strong rounded-[30px] p-6"><h3 className="text-xl font-semibold tracking-tight">Key takeaways</h3><div className="mt-4 space-y-3">{items.map((item) => <div key={item} className="rounded-2xl border border-white/10 bg-slate-950/60 p-4 text-white/75 leading-7">{item}</div>)}</div></GlassCard>; }

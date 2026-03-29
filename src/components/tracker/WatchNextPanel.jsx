@@ -1,0 +1,2 @@
+import GlassCard from "@/components/ui/GlassCard";
+export default function WatchNextPanel({ items = ["RBI commentary", "Quarterly earnings", "Hiring activity"] }) { return <GlassCard className="rounded-[30px] bg-gradient-to-br from-emerald-400/15 to-cyan-400/15 p-6"><p className="text-sm uppercase tracking-[0.2em] text-white/75">What to watch next</p><div className="mt-4 space-y-3 text-sm text-white/85">{items.map((item) => <div key={item} className="rounded-[24px] border border-white/10 bg-black/20 p-4">{item}</div>)}</div></GlassCard>; }

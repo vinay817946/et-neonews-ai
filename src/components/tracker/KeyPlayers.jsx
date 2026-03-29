@@ -1,0 +1,2 @@
+import GlassCard from "@/components/ui/GlassCard";
+export default function KeyPlayers({ items = ["Government policy makers", "Retail investors", "Startup founders", "Banks and analysts"] }) { return <GlassCard className="neo-panel-strong rounded-[30px] p-6"><p className="text-sm uppercase tracking-[0.2em] text-orange-300">Key actors</p><div className="mt-5 grid gap-3">{items.map((actor) => <div key={actor} className="rounded-[24px] border border-white/10 bg-slate-950/60 p-4 text-white/80">{actor}</div>)}</div></GlassCard>; }

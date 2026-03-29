@@ -1,0 +1,4 @@
+
+import { Radar } from "lucide-react";
+import GlassCard from "@/components/ui/GlassCard";
+export default function WatchlistCard({ item }) { return <GlassCard className="neo-panel-strong panel-hover rounded-[30px] p-5"><span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-cyan-200"><Radar size={18} /></span><p className="mt-4 text-sm text-cyan-300">{item.type}</p><h3 className="mt-2 text-xl font-semibold tracking-tight">{item.name}</h3><p className="mt-3 line-clamp-3 text-sm leading-6 text-white/60">{item.summary}</p><div className="mt-4 inline-flex rounded-full border border-white/10 bg-slate-950/60 px-3 py-1 text-sm text-white/70">{item.status}</div><div className="mt-4 flex flex-wrap gap-2">{(item.tags || []).map((tag) => <span key={tag} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">#{tag}</span>)}</div></GlassCard>; }

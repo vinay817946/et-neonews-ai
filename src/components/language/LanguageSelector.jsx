@@ -1,0 +1,3 @@
+"use client";
+import { cn } from "@/lib/utils";
+export default function LanguageSelector({ languages, selectedLanguage, onSelect }) { return <div className="grid gap-3">{languages.map((item) => { const active = selectedLanguage === item.label; return <button key={item.label} onClick={() => onSelect(item.label)} className={cn("panel-hover w-full rounded-[26px] border px-4 py-3.5 text-left transition", active ? "border-white/25 bg-white text-slate-950 shadow-[0_20px_48px_rgba(255,255,255,0.14)]" : "border-white/10 bg-slate-950/60 text-white hover:bg-slate-950")}>{item.label}</button>; })}</div>; }

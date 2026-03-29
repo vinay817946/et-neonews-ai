@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server";
+export async function POST(req) { try { const body = await req.json(); const { articleText = "" } = body; const summary = `This is a mock AI summary for the provided article. Preview: ${articleText.slice(0, 120)}...`; return NextResponse.json({ success: true, summary }); } catch (error) { return NextResponse.json({ success: false, message: "Failed to summarize article" }, { status: 500 }); } }

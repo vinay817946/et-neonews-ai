@@ -1,0 +1,1 @@
+export default function InterestTags({ items = [] }) { return <div className="flex flex-wrap gap-2">{items.map((item) => <span key={item} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.14em] text-white/70">{item}</span>)}</div>; }
